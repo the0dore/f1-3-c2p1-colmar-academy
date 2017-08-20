@@ -1,0 +1,371 @@
+html {
+    font-size: 16px;
+    color: #444444;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Mobile first*/
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 2.25rem;
+    text-align: center;
+    border-top: 0.001rem solid #DCDCDC;
+    padding: 2rem 0 1rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+p {
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1E90FF;
+    line-height: 1.5rem;
+}
+
+img, video {
+    width: 100%;
+}
+
+.text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.desktop {
+    display: none;
+}
+
+
+/*Header for mobile view*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: #FFFFFF;
+}
+
+header #logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+#logo img {
+    height: 2rem;
+    transition-duration: 0.25s;
+}
+
+#logo img:hover {
+    height: 2.5rem;
+}
+
+
+/*Banner section for mobile view*/
+#banner {
+    padding-top: 4rem;
+    background-color: #e9ebee;
+    display: flex;
+    flex-direction: column;
+}
+
+#banner .text-and-button {
+    padding: 2rem;
+}
+
+#banner .button {
+    font-size: 1.1rem;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #808080;
+    color: #FFFFFF;
+    transition: 0.25s;
+}
+
+#banner .button:hover {
+    background-color: #444444;
+    cursor: pointer;
+}
+
+#banner h4 {
+    padding: 2rem 0 1.75rem;
+}
+
+
+/*Info section for mobile view*/
+#info .images-and-text {
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#info .image-and-text {
+    margin-bottom: 1rem;
+}
+
+
+/*Courses section for mobile view*/
+.mobile h4 {
+    background-color: #e9ebee;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    transition: 0.25s;
+}
+
+.mobile h4:last-child {
+    margin-bottom: 2rem;
+}
+
+.mobile h4:hover {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/*Thesis section for mobile view*/
+#thesis .container {
+    margin-top: 0.5rem;
+}
+
+
+/*Footer for mobile view*/
+footer {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+}
+
+
+
+/*For desktop view*/
+@media only screen and (min-width: 1390px) {
+    
+    .site-container {
+        margin: 0 9rem;
+    }
+    
+}
+
+
+
+/*For desktop & tablet view*/
+@media only screen and (min-width: 650px) {
+    
+    h2 {
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+    }
+    h3 {
+        border: none;
+        font-size: 2.1rem;
+        line-height: 2.75rem;
+    }
+    h4 {
+        font-size: 1.50rem;
+        line-height: 2rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+        color: #808080;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 0 2rem 0.5rem;
+        display: flex;
+    }
+    
+    .desktop span {
+        padding: 0 0.5rem;
+    }    
+    .desktop span:hover {
+        color: #999999;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    
+    .important-content {
+        width: 60%;
+        padding: 1rem;
+    }
+    .images-and-text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image-and-text {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        transition: 0.1s;
+    }
+    .image-and-text:hover {
+        background-color: #e9ebee;
+    }
+    .image {
+        width: 35%;
+    }
+    .text {
+        width: 65%;
+    }
+    .text-container {
+        margin-left: 1.5rem;
+    }    
+    
+    
+/*Header for desktop view*/
+    header {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo img {
+        display: none;
+    }
+    #logo img:first-child {
+        display: inline-flex;
+        padding: 0 0.25rem 0 1.5rem;
+        height: 2.5rem;
+    }
+    header .desktop {
+        display: inline-flex;
+        padding-right: 1.5rem;
+    }
+    strong {
+        font-weight: bold;
+        color: #444444;
+    }
+    
+    
+/*Banner section for desktop view*/    
+    #banner {
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    #banner .image {
+        width: 60%;
+        padding: 1rem 0.5rem;
+    }
+    #banner .text-and-button {
+        width: 30%;
+    }
+    #banner .button {
+        padding: 1.5rem 0;
+        margin: 1rem 3rem 0 0;
+    }
+
+
+/*Info section for desktop view*/
+    #info h3 {
+        text-align: left;
+        padding-bottom: 0.5rem;
+    }
+    #info .desktop {
+        display: block;
+    }
+    .author {
+        padding-top: 0.25rem;
+        font-size: 0.75rem;
+    }    
+    #info .image-and-text {
+        margin: 0;
+    }
+    #info .images-and-text {
+        padding: 0;
+    }
+
+/*Courses section for desktop view*/    
+    #courses {
+        background-color: #e9ebee;
+    }
+    #courses h3 {
+        padding-top: 2.5rem;      
+    }
+    #courses .desktop {        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 4rem 2rem;
+    }
+    .course {
+        background-color: #FFFFFF;
+        flex: 1 1 30%;
+        margin: 1rem;
+        transition: 0.1s;
+        display: flex;
+        flex-direction: column;
+    }
+    .course:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .course .text {
+        width: auto;
+        height: 10rem; 
+    }
+
+
+/*Thesis section for desktop view*/
+    #thesis .desktop {
+        display: flex;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    #thesis h3 {
+        padding-top: 2.5rem;      
+    }
+    #thesis .important-content {
+        padding-bottom: 0rem;
+    }
+
+
+/*Footer for desktop view*/ 
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 2rem 1.5rem;
+        border-top: 0.001rem solid #DCDCDC;
+    }
+    footer .desktop {
+        display: inline-flex;
+    }   
+
+}
+
+
+
+
+
+
+    
+
+
+    
+    
+    
+    
